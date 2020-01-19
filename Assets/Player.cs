@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float m_speed;
+    public float m_health;
     public GameObject m_slash;
 
     private Rigidbody2D m_rb;
@@ -38,13 +39,19 @@ public class Player : MonoBehaviour
         {
             m_animator.SetTrigger("Attack");
         }
-
         
     }
 
     private void FixedUpdate()
     {
         m_rb.MovePosition(m_rb.position + m_moveVector * m_speed * Time.fixedDeltaTime);
+    }
+
+    public void TakeDamage(float m_damage)
+    {
+        m_health -= m_damage;
+
+        
     }
 
 }
