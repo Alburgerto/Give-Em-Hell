@@ -51,7 +51,10 @@ public class Player : MonoBehaviour
     {
         m_health -= m_damage;
 
-        
+        if (m_health <= 0)
+        {
+            Debug.Log("Dead as a dodo");
+        }
     }
 
 }

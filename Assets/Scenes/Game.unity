@@ -248,11 +248,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bcbafe101bdbbe4ab25a209f656c10e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_player: {fileID: 1600380464}
   m_slime: {fileID: 7728161969937242932, guid: 914817d13b232a043807f793e291d598, type: 3}
   m_appearRange: 10
-  m_appearanceRate: 5
+  m_appearanceRate: 3
   m_changeDifficultyTime: 15
+  m_scaleVariability: 5
 --- !u!4 &1205456415
 Transform:
   m_ObjectHideFlags: 0
@@ -265,7 +265,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1600380464 stripped
 Transform:
@@ -288,7 +288,7 @@ PrefabInstance:
     - target: {fileID: 1680541530460270626, guid: 0b47da07975d4424dab65f9c95793a15,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.33
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1680541530460270626, guid: 0b47da07975d4424dab65f9c95793a15,
         type: 3}
@@ -323,7 +323,7 @@ PrefabInstance:
     - target: {fileID: 1680541530460270626, guid: 0b47da07975d4424dab65f9c95793a15,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1680541530460270626, guid: 0b47da07975d4424dab65f9c95793a15,
         type: 3}
@@ -367,7 +367,7 @@ PrefabInstance:
     - target: {fileID: 7728161969937242952, guid: 914817d13b232a043807f793e291d598,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.99
+      value: 4.76
       objectReference: {fileID: 0}
     - target: {fileID: 7728161969937242952, guid: 914817d13b232a043807f793e291d598,
         type: 3}
@@ -402,7 +402,7 @@ PrefabInstance:
     - target: {fileID: 7728161969937242952, guid: 914817d13b232a043807f793e291d598,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7728161969937242952, guid: 914817d13b232a043807f793e291d598,
         type: 3}

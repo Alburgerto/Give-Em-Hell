@@ -8,13 +8,14 @@ public class Slime : MonoBehaviour
     public float m_health;
     public float m_pushForce;
     public float m_speed;
-    public Transform m_target;
 
+    private Transform m_target;
     private Animator m_animator;
 
     // Start is called before the first frame update
     void Start()
     {
+        m_target = GameObject.FindGameObjectWithTag("Player").transform;
         m_animator = GetComponent<Animator>();
         StartCoroutine(Blink());
     }
